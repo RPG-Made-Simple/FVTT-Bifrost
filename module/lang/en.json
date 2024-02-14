@@ -1,2 +1,50 @@
 {
+  "bifrost": {
+    "dnd5e": {
+      "hooks": {
+        "after-attack-roll": {
+          "label": "DnD5e After JUST Attack Roll"
+        },
+        "after-damage-roll": {
+          "label": "DnD5e After JUST Damage Roll"
+        },
+        "after-item-roll": {
+          "label": "Dnd5e After Item Roll"
+        }
+      }
+    },
+    "midi-qol": {
+      "hooks": {
+        "after-attack-roll": {
+          "label": "MidiQol After JUST Attack Roll"
+        },
+        "after-damage-roll": {
+          "label": "MidiQol After JUST Damage Roll"
+        },
+        "after-roll-complete": {
+          "label": "MidiQol After JUST Complete Roll"
+        }
+      }
+    },
+    "pf2e": {
+      "hooks": {
+        "after-attack-roll": {
+          "label": "Pf2e After Attack Roll"
+        },
+        "after-item-roll": {
+          "label": "Pf2e After Item Roll"
+        }
+      }
+    },
+    "symbaroum": {
+      "hooks": {
+        "after-attack-roll": {
+          "label": "Symbaroum After Attack Roll"
+        },
+        "after-item-roll": {
+          "label": "Symbaroum After Item Roll"
+        }
+      }
+    }
+  }
 }
