@@ -42,11 +42,6 @@
           "minimun": "3.0.0",
           "verified": "3.0.0"
         }
-      },
-      {
-        "id": "pf2e",
-        "type": "system",
-        "compatibility": {}
       }
     ],
     "requires": [

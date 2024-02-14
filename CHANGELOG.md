@@ -7,6 +7,5 @@
 - *Internal* - Hook information extraction does not extract `Tags` anymore.
 - *API* - Exposed only the current `Bridge` as the `API`, which is set based on the current system being used.
 - *Bridge* - Added [DnD5e](https://foundryvtt.com/packages/dnd5e).
-- *Bridge* - Added [Pf2e](https://foundryvtt.com/packages/pf2e).
 
 ##
