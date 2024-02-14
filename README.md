@@ -10,9 +10,9 @@
   </a>
 </p>
 
-A FoundryVTT library that provides a **system-agnostic [API]()** to interact with Foundry without worrying about system implementation details.
+A FoundryVTT library that provides a **system-agnostic ~~[API]()~~ (WIP)**  to interact with Foundry without worrying about system implementation details.
 
-> Note that this **system-agnostic** approach requires the system to be supported by Bifrost, and that requires a custom [`Bridge`]() implementation.
+> Note that this **system-agnostic** approach requires the system to be supported by Bifrost, and that requires a custom ~~[`Bridge`]()~~ (WIP) implementation.
 
 Do you like the module? Consider supporting it :)
 
