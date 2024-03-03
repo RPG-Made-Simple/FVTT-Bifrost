@@ -7,7 +7,7 @@ assignees:
 body:
   - type: markdown
     attributes:
-      value: /
+      value:
         Thanks for taking the time to fill out this system support request! Please, take your time and make the request as complete as possible, more details make it easier for us to support the system that ou are about do describe, please fill all the required files with caution to the details and include everything that could be relevant, even the small little details.
 
         Please no that system support depends on that system having some features or not, not all systems are capable of having the complete feature set of Bifrost supported, but we will implement everything possible!
@@ -35,7 +35,7 @@ body:
     id: features
     attributes:
       label: Features of the system
-      description: /
+      description:
         Please select the features that your system has.
 
         These features refer to the features that are implemented by the FoundryVTT package of your system, not the rule books. i.e. only check "Attack Rolls" if the package that implements your system rolls attacks for you when you do a attack action or something similar.
@@ -47,7 +47,7 @@ body:
     id: notes
     attributes:
       label: Notes on the Support
-      description: /
+      description:
         Is there something that we should know about the system to support it? i.e. special rules that are unique to the system, it does not have items at all, or other things that you think could be useful when we get to start implementing the system.
     validations:
       required: false

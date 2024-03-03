@@ -7,7 +7,7 @@ assignees:
 body:
   - type: markdown
     attributes:
-      value: |
+      value:
         Thanks for taking the time to fill out this bug report! Please, take your time and make this bug report as complete as possible, more details make it easier for us to fix whatever problems you are having, please fill all the required fields with caution to the details and include everything that could be useful, even the small little details.
   - type: input
     id: discord
@@ -48,7 +48,7 @@ body:
     attributes:
       label: Reproduction Steps
       description: How do you trigger this bug? Please walk us through it step by step
-      value: |
+      value:
         1.
         2.
         3.

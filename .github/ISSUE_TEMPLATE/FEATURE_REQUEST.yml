@@ -7,7 +7,7 @@ assignees:
 body:
   - type: markdown
     attributes:
-      value: |
+      value:
         Thanks for taking the time to fill out this feature request! Please, take your time and make this request as complete as possible, more details make it easier for us to implement what you want, please fill all the required fields with attention to details and include everything that could be useful, even the small details.
   - type: input
     id: discord
