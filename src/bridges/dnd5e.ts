@@ -122,9 +122,6 @@ export class DnD5eBridge extends Bridge {
     return await this.deleteItems(target, itemIds);
   }
 
-  //////////////////////////////////////////////////////////////////////////////
-  // Method that extracts useful information from items
-  //////////////////////////////////////////////////////////////////////////////
   getItemInformation(item) {
     // Debug
     C.D.info('DnD5eBridge.getItemInformation()');
@@ -167,7 +164,7 @@ export class DnD5eBridge extends Bridge {
       state: {
         equipped: item.system.equipped
       }
-    })
+    });
   }
 
   async setItemInformation(item, information: ItemInformation) {
@@ -176,14 +173,13 @@ export class DnD5eBridge extends Bridge {
 
     const itemInformation = this.getItemInformation(item);
 
-    let owner = itemInformation.basic.owner;
     // @ts-ignore
-    const hasOwner = Toolbox.check(owner);
+    const hasOwner = Toolbox.check(itemInformation.basic.owner);
 
     // Debug
     C.D.info('Setting information for:', item);
     C.D.info('Passed information was:', information);
-    C.D.info(`Has owner? ${hasOwner} -`, owner);
+    C.D.info(`Has owner? ${hasOwner} -`, itemInformation.basic.owner);
 
     // The data that will be updated should be put here
     let data = {};
