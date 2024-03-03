@@ -2,7 +2,7 @@
 
 ## Version 1.0.0
 > This library was part of [OIF](https://foundryvtt.com/packages/object-interaction-fx), all of the changes here are relative to that module.
-- *Github* - Added `SYSTEM_REQUEST` issue template.
+- *Github* - Added `SYSTEM_SUPPORT` issue template.
 - *License* - Updated `LICENSE`.
 - *Internal* - Converted the complex system selector to an abstract class that requires its children to implement the abstract methods.
 - *Internal* - Item creation is now requested from another user that is capable in case the current one is not.
