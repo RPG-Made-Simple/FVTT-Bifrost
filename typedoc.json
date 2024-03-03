@@ -1,0 +1,7 @@
+{
+  "entryPointStrategy": "expand",
+  "entryPoints": ["./src/**/*.ts"],
+  "out": "./docs",
+  "includes": "./src",
+  "readme": "none"
+}

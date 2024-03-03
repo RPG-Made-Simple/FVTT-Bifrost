@@ -45,6 +45,9 @@
           "label": "Symbaroum After Item Roll"
         }
       }
+    },
+    "error": {
+      "system-not-supported": "{system} is not yet supported by Bifrost"
     }
   }
 }

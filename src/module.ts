@@ -1,11 +1,8 @@
-// ? Bifrost provides developers with a generic enough interface between modules
-// ? to make system-agnostic implementations easier.
+// Bifrost provides developers with a generic enough interface between modules
+// to make system-agnostic implementations easier.
 import { Constants as C } from "./constants";
 import { Bifrost } from "./bifrost";
 
-////////////////////////////////////////////////////////////////////////////////
-// Entry-point for everything
-////////////////////////////////////////////////////////////////////////////////
 // @ts-ignore
 Hooks.once('init', () => {
   // @ts-ignore
