@@ -1,7 +1,9 @@
 {
+  "name": "🌈 Bifrost",
+  "readme": "DOCUMENTATION.md",
   "entryPointStrategy": "expand",
   "entryPoints": ["./src/**/*.ts"],
   "out": "./docs",
   "includes": "./src",
-  "readme": "none"
+  "hideGenerator": true,
 }

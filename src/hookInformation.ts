@@ -1,10 +1,20 @@
 /**
- * Hook types that can be used
+ * Hook types that are used to inform the origin of a hook.
  */
 export enum HookType {
-  Invalid,
-  Attack,
-  Item,
+  /**
+   * Refers to a invalid state, when this enum is used you can safely assume
+   * that the data ralated to it is invalid too.
+   */
+  Invalid = "INVALID",
+  /**
+   * The hook is related to attack rolls.
+   */
+  Attack = "ATTACK",
+  /**
+   * The hook is related to item rolls.
+   */
+  Item = "ITEM",
 }
 
 /**
@@ -43,8 +53,21 @@ export class HookInformation {
     total: number,
     critical: boolean,
     fumble: boolean,
+  } = {
+    roll: -1,
+    total: -1,
+    critical: false,
+    fumble: false,
   }
 
+  /**
+   * Creates a new `HookInformation`, you can pass partial values to this
+   * constructor, such as:
+   * ```ts
+   * let newhookInformation = new HookInformation({type: HookType.Attack});
+   * ```
+   * @param init Partial
+   */
   public constructor(init?: Partial<HookInformation>) {
     Object.assign(this, init);
   }
