@@ -58,6 +58,6 @@
     ]
   },
   "esmodules": [
-    "./module/scripts/module.js"
+    "./module/module.min.js"
   ]
 }
