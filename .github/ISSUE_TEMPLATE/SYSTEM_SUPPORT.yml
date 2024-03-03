@@ -17,6 +17,9 @@ body:
         Note that we will **ONLY** support the latest stable system version, this implementation has a chance of falling behind and in that case we will try to update it to the latest stable version, but we will never provide a backport for versions that are not the latest one.
 
 
+        **Detailed requests will be prioritized over requests without much details.**
+
+
         _(We encourage you to try contacting your system developers and inform them about Bifrost, they can also provide support for the module on their side by making an official Bridge)_
   - type: input
     id: discord
