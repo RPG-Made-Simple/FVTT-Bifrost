@@ -1,9 +1,9 @@
 import { Constants as C } from "../constants";
 import { Bridge } from "../bridge";
-import { HyperInformation } from "../hyperInformation";
-import { SystemInformation, SystemRange, SystemRangeUnit } from "../systemInformation";
-import { ItemInformation } from "../itemInformation";
-import { HookInformation, HookType } from "../hookInformation";
+import { HyperInformation } from "../hyper_information";
+import { SystemInformation, SystemRange, SystemRangeUnit } from "../system_information";
+import { ItemInformation } from "../item_information";
+import { HookInformation, HookType } from "../hook_information";
 
 function propertyToggle(properties, property, string) {
   if (property != undefined) {

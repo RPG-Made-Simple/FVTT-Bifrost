@@ -64,7 +64,7 @@ export class HookInformation {
    * Creates a new `HookInformation`, you can pass partial values to this
    * constructor, such as:
    * ```ts
-   * let newhookInformation = new HookInformation({type: HookType.Attack});
+   * let newHookInformation = new HookInformation({type: HookType.Attack});
    * ```
    * @param init Partial
    */

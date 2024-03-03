@@ -31,3 +31,11 @@ export class Constants {
    */
   public static CURRENT_BRIDGE: Bridge;
 }
+
+/**
+ *
+ */
+export class ModuleHooks {
+  public static readonly INITIALIZING = 'bifrost.init';
+  public static readonly READY = 'bifrost.ready';
+}

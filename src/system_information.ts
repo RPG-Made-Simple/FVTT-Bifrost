@@ -3,9 +3,9 @@ export enum SystemRangeUnit {
    * Represents an invalid range, generally used when the range is not defined
    * or not valid
    */
-  Invalid,
-  Foot,
-  Meter,
+  Invalid = "INVALID",
+  Foot = "FOOT",
+  Meter = "METER",
 }
 
 /**
@@ -38,6 +38,14 @@ export class SystemInformation {
     melee: new SystemRange(SystemRangeUnit.Invalid, -1),
   }
 
+  /**
+   * Creates a new `SystemInformation`, you can pass partial values to this
+   * constructor, such as:
+   * ```ts
+  * let newSystemInformation = new SystemInformation();
+  * ```
+  * @param init Partial
+  */
   public constructor(init?: Partial<SystemInformation>) {
     Object.assign(this, init);
   }

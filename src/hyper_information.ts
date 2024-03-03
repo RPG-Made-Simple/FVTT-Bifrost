@@ -26,6 +26,14 @@ export class HyperInformation {
     changeImg: false
   }
 
+  /**
+   * Creates a new `HyperInformation`, you can pass partial values to this
+   * constructor, such as:
+   * ```ts
+  * let newHyperInformation = new HyperInformation();
+  * ```
+  * @param init Partial
+  */
   public constructor(init?: Partial<HyperInformation>) {
     Object.assign(this, init);
   }

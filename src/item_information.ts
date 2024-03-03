@@ -1,4 +1,4 @@
-import { SystemRange, SystemRangeUnit } from "./systemInformation"
+import { SystemRange, SystemRangeUnit } from "./system_information"
 
 /**
  * This class is a very special one, it represents the information that items
@@ -116,6 +116,14 @@ export class ItemInformation {
     equipped: boolean,
   }
 
+  /**
+   * Creates a new `ItemInformation`, you can pass partial values to this
+   * constructor, such as:
+   * ```ts
+  * let newItemInformation = new ItemInformation();
+  * ```
+  * @param init Partial
+  */
   public constructor(init?: Partial<ItemInformation>) {
     Object.assign(this, init);
   }

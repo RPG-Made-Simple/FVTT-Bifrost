@@ -1,7 +1,7 @@
 import { Constants as C } from "./constants";
-import { HyperInformation } from "./hyperInformation";
-import { ItemInformation } from "./itemInformation";
-import { SystemInformation } from "./systemInformation";
+import { HyperInformation } from "./hyper_information";
+import { ItemInformation } from "./item_information";
+import { SystemInformation } from "./system_information";
 
 /**
  * Abstract class that provides an interface between the systems. To support a

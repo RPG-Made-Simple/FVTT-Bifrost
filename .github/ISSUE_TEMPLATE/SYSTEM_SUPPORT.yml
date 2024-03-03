@@ -1,0 +1,53 @@
+name: System Support
+description: Do you want the module to support the system you use? Please, file this system support request!
+title: "[SYSTEM] "
+labels: ["system", "triage"]
+assignees:
+  - ZotyDev
+body:
+  - type: markdown
+    attributes:
+      value: /
+        Thanks for taking the time to fill out this system support request! Please, take your time and make the request as complete as possible, more details make it easier for us to support the system that ou are about do describe, please fill all the required files with caution to the details and include everything that could be relevant, even the small little details.
+
+        Please no that system support depends on that system having some features or not, not all systems are capable of having the complete feature set of Bifrost supported, but we will implement everything possible!
+
+        Note that we will **ONLY** support the latest stable system version, this implementation has a chance of falling behind and in that case we will try to update it to the latest stable version, but we will never provide a backport for versions that are not the latest one.
+
+        _(We encourage you to try contacting your system developers and inform them about Bifrost, they can also provide support for the module on their side by making an official Bridge)_
+  - type: input
+    id: discord
+    attributes:
+      label: Discord Username
+      description: Your discord username in case we need to contact you for more info about the system, this includes asking questions about the rules of the system
+      placeholder: discord username
+    validations:
+      required: false
+  - type: input
+    id: system_package
+    attributes:
+      label: System Link
+      description: A link to the system's foundry package
+      placeholder: https://foundryvtt.com/packages/<SYSTEM_ID>
+    validations:
+      required: true
+  - type: dropdown
+    id: features
+    attributes:
+      label: Features of the system
+      description: /
+        Please select the features that your system has.
+
+        These features refer to the features that are implemented by the FoundryVTT package of your system, not the rule books. i.e. only check "Attack Rolls" if the package that implements your system rolls attacks for you when you do a attack action or something similar.
+      multiple: true
+      options:
+        - Attack Rolls
+        - Item Rolls
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes on the Support
+      description: /
+        Is there something that we should know about the system to support it? i.e. special rules that are unique to the system, it does not have items at all, or other things that you think could be useful when we get to start implementing the system.
+    validations:
+      required: false
