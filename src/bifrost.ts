@@ -6,7 +6,7 @@
 import { Constants as C, ModuleHooks } from "./constants"
 
 // Bridges
-import { DnD5eBridge } from "./bridges/dnd5e"
+import { DnD5eBridge } from "./bridge"
 //import { Pf2eBridge } from "./bridges/pf2e";
 
 /**

@@ -2,8 +2,10 @@
   "name": "🌈 Bifrost",
   "readme": "DOCUMENTATION.md",
   "entryPointStrategy": "expand",
-  "entryPoints": ["./src/**/*.ts"],
+  "entryPoints": ["./src/index.ts"],
   "out": "./docs",
   "includes": "./src",
   "hideGenerator": true,
+  "includeVersion": true,
+  "plugin": ["typedoc-plugin-not-exported"]
 }

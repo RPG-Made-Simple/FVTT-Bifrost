@@ -1,5 +1,5 @@
 import { Constants as C } from "../constants";
-import { Bridge } from "../bridge";
+import { BridgeAbstract } from "./bridge_abstract";
 import { HyperInformation } from "../hyper_information";
 import { SystemInformation, SystemRange, SystemRangeUnit } from "../system_information";
 import { ItemInformation } from "../item_information";
@@ -21,7 +21,7 @@ function propertyToggle(properties, property, string) {
 /**
  * Bridge for DnD5e.
  */
-export class DnD5eBridge extends Bridge {
+export class DnD5eBridge extends BridgeAbstract {
   registerReplicated(socket: any) {
     socket.register('createItems', this._createItems);
     socket.register('deleteItems', this._deleteItems);

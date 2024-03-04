@@ -1,15 +1,15 @@
-import { Constants as C } from "./constants";
-import { HookType } from "./hook_information";
-import { HyperInformation } from "./hyper_information";
-import { ItemInformation } from "./item_information";
-import { SystemInformation } from "./system_information";
+import { Constants as C } from "../constants";
+import { HookType } from "../hook_information";
+import { HyperInformation } from "../hyper_information";
+import { ItemInformation } from "../item_information";
+import { SystemInformation } from "../system_information";
 
 /**
  * Abstract class that provides an interface between the systems. To support a
  * system it is required to implement a Bridge for it. That requires manual work
  * on our part and should be always tested later.
  */
-export abstract class Bridge {
+export abstract class BridgeAbstract {
   /**
    * Register the replicated methods
    * @param socket Instance of a socket from socketlib

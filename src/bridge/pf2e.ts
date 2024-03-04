@@ -1,5 +1,5 @@
 import { Constants as C } from "../constants";
-import { Bridge } from "../bridge";
+import { BridgeAbstract } from "./bridge_abstract";
 import { ItemInformation } from "../item_information";
 import { HookInformation, HookType } from "../hook_information";
 import { HyperInformation } from "../hyper_information";
@@ -8,7 +8,7 @@ import { SystemInformation, SystemRange, SystemRangeUnit } from "../system_infor
 /**
  * Bridge for Pathfinder 2e
  */
-export class Pf2eBridge extends Bridge {
+export class Pf2eBridge extends BridgeAbstract {
   registerReplicated(socket: any) {
     socket.register('createItems', this._createItems);
     socket.register('deleteItems', this._deleteItems);
