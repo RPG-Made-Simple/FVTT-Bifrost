@@ -94,35 +94,35 @@ export class DnD5eBridge extends Bridge {
     });
   }
 
-  async _createItems(targetUuid, items) {
+  async _createItems(targetUuid: string, items: Array<any>) {
     // Debug
     C.D.info('DnD5eBridge._createItems()');
 
     await this._createItems(targetUuid, items);
   }
 
-  async createItems(target, items) {
+  async createItems(target: any, items: Array<any>) {
     // Debug
     C.D.info('DnD5eBridge.createItems()');
 
     return await this.createItems(target, items);
   }
 
-  async _deleteItems(targetUuid, itemIds) {
+  async _deleteItems(targetUuid: string, itemIds: Array<string>) {
     // Debug
     C.D.info('DnD5eBridge._deleteItems()');
 
     await this._deleteItems(targetUuid, itemIds);
   }
 
-  async deleteItems(target, itemIds) {
+  async deleteItems(target: any, itemIds: Array<string>) {
     // Debug
     C.D.info('DnD5eBridge.deleteItems()');
 
     return await this.deleteItems(target, itemIds);
   }
 
-  getItemInformation(item) {
+  getItemInformation(item: any) {
     // Debug
     C.D.info('DnD5eBridge.getItemInformation()');
 
@@ -167,7 +167,7 @@ export class DnD5eBridge extends Bridge {
     });
   }
 
-  async setItemInformation(item, information: ItemInformation) {
+  async setItemInformation(item: any, information: ItemInformation) {
     // Debug
     C.D.info('DnD5eBridge.setItemInformation()');
 
@@ -248,7 +248,7 @@ export class DnD5eBridge extends Bridge {
     }
   }
 
-  getHookInformation(workflow, source: HookType, from) {
+  getHookInformation(workflow: Array<any>, source: HookType, from: string) {
     // Debug
     C.D.info('DnD5eBridge.getHookInformation()');
 

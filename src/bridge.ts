@@ -1,4 +1,5 @@
 import { Constants as C } from "./constants";
+import { HookType } from "./hook_information";
 import { HyperInformation } from "./hyper_information";
 import { ItemInformation } from "./item_information";
 import { SystemInformation } from "./system_information";
@@ -13,7 +14,7 @@ export abstract class Bridge {
    * Register the replicated methods
    * @param socket Instance of a socket from socketlib
    */
-  abstract registerReplicated(socket);
+  abstract registerReplicated(socket: any);
 
   /**
    * Returns all the hooks useful for attack
@@ -40,7 +41,7 @@ export abstract class Bridge {
    * @param targetUuid
    * @param items
    */
-  async _createItems(targetUuid, items) {
+  async _createItems(targetUuid: string, items: Array<any>) {
     // Debug
     C.D.info('Bridge._createItems()');
 
@@ -56,7 +57,7 @@ export abstract class Bridge {
    * @param target
    * @param items
    */
-  async createItems(target, items) {
+  async createItems(target: any, items: Array<any>) {
     // Debug
     C.D.info('Bridge.createItems()');
 
@@ -80,7 +81,7 @@ export abstract class Bridge {
    * @param targetUuid
    * @param itemIds
    */
-  async _deleteItems(targetUuid, itemIds) {
+  async _deleteItems(targetUuid: string, itemIds: Array<string>) {
     // Debug
     C.D.info('Bridge._deleteItems()');
 
@@ -97,7 +98,7 @@ export abstract class Bridge {
    * @param itemIds
    * @returns
    */
-  async deleteItems(target, itemIds) {
+  async deleteItems(target: any, itemIds: Array<string>) {
     // Debug
     C.D.info('Bridge.deleteItems()');
 
@@ -121,7 +122,7 @@ export abstract class Bridge {
    * @param item
    * @returns
    */
-  getBasicItemInformation(item) {
+  getBasicItemInformation(item: any) {
     // Basic info
     const name = item.name;
     const owner = item.parent;
@@ -139,14 +140,14 @@ export abstract class Bridge {
    * @param item
    * @returns
    */
-  abstract getItemInformation(item) : ItemInformation;
+  abstract getItemInformation(item: any) : ItemInformation;
 
   /**
    * Method that sets the information of an item
    * @param item
    * @param information
    */
-  abstract setItemInformation(item, information: ItemInformation);
+  abstract setItemInformation(item: any, information: ItemInformation);
 
   /**
    * Method that is called when a hook is triggered and returns the information
@@ -155,5 +156,5 @@ export abstract class Bridge {
    * @param source
    * @param from
    */
-  abstract getHookInformation(workflow, source, from);
+  abstract getHookInformation(workflow: Array<any>, source: HookType, from: string);
 }
