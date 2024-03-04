@@ -8,6 +8,7 @@ const source = require('vinyl-source-stream');
 const tsify = require('tsify');
 const uglify = require('gulp-uglify');
 const buffer = require('vinyl-buffer');
+const ts = require('gulp-typescript');
 
 const scriptSource = './src';
 const langSource = './lang'
@@ -28,7 +29,6 @@ function clean() {
   return Promise.resolve('Successfully cleaned');
 }
 
-
 function tsBundle() {
   return browserify({
     baseDir: scriptSource,
@@ -42,6 +42,17 @@ function tsBundle() {
     .pipe(sourcemaps.init({ loadMaps: true }))
     .pipe(uglify())
     .pipe(dest(packageDir));
+}
+
+function genDeclarations() {
+  let tsProject = ts.createProject('tsconfig.json', {
+    declaration: true,
+    emitDeclarationOnly: true,
+  });
+
+  return tsProject.src()
+    .pipe(tsProject())
+    .pipe(dest('./types'));
 }
 
 function langBundle() {
@@ -66,6 +77,7 @@ const buildTask = process.env.NODE_ENV === 'production' ?
       tsBundle,
       langBundle,
       moduleJsonBundle,
+      genDeclarations,
     ),
     publish,
   ) :
@@ -75,6 +87,7 @@ const buildTask = process.env.NODE_ENV === 'production' ?
       tsBundle,
       langBundle,
       moduleJsonBundle,
+      genDeclarations,
     ),
   );
 

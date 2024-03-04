@@ -1,0 +1,34 @@
+/**
+ * Represents a sort of metadate that defines what things the system does by its
+ * own, what data exist/lacks inside the system, and many more other things that
+ * could be useful for other modules to know. Note that this is not yet complete
+ * and will receive changes in the future.
+ *
+ * Currently we only define if the system does something by default, i.e. if
+ * `lighting.changeImg` is `true` then the system already changes the image of
+ * lighting items when they are used.
+ */
+export declare class HyperInformation {
+    /**
+     * Information abou the lighting automation provided by the system
+     */
+    lighting: {
+        /**
+         * Does the system does lighting item automations?
+         */
+        automate: boolean;
+        /**
+         * Does the system change the image of an item during automation?
+         */
+        changeImg: boolean;
+    };
+    /**
+     * Creates a new `HyperInformation`, you can pass partial values to this
+     * constructor, such as:
+     * ```ts
+    * let newHyperInformation = new HyperInformation();
+    * ```
+    * @param init Partial
+    */
+    constructor(init?: Partial<HyperInformation>);
+}

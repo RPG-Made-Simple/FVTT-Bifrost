@@ -11,6 +11,7 @@
   "devDependencies": {
     "@types/gulp": "^4.0.17",
     "browserify": "^17.0.0",
+    "dts-gen": "^0.10.0",
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-json-minify": "^1.2.3",

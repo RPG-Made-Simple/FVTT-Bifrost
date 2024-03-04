@@ -6,5 +6,8 @@
     "outDir": "./out",
     "rootDir": "./src"
   },
+  "include": [
+    "./src/**/*.ts"
+  ],
   "files": ["./src/index.ts"]
 }

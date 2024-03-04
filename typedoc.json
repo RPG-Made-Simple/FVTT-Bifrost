@@ -7,5 +7,5 @@
   "includes": "./src",
   "hideGenerator": true,
   "includeVersion": true,
-  "plugin": ["typedoc-plugin-not-exported"]
+  "plugin": ["typedoc-plugin-not-exported"],
 }
