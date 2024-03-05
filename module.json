@@ -1,9 +1,8 @@
 {
-  "id": "bifrost",
-  "title": "🌈 Bifrost (Library)",
-  "description": "Library that adds an interface between systems.",
-  "version": "1.0.0",
-  "library": true,
+  "id": "MODULE_ID",
+  "title": "MODULE_TITLE",
+  "description": "MODULE_DESCRIPTION",
+  "version": "MODULE_VERSION",
   "authors": [
     {
       "name": "ZotyDev",
@@ -25,14 +24,13 @@
     "minimun": "10",
     "verified": "11"
   },
-  "license": "./LICENSE",
-  "url": "https://github.com/RPG-Made-Simple/FVTT-Bifrost",
-  "bugs": "https://github.com/RPG-Made-Simple/FVTT-Bifrost/issues",
-  "manifest": "https://github.com/RPG-Made-Simple/FVTT-Bifrost/releases/latest/download/module.json",
-  "download": "https://github.com/RPG-Made-Simple/FVTT-Bifrost/releases/latest/download/module.zip",
-  "readme": "https://github.com/RPG-Made-Simple/FVTT-Bifrost/blob/main/README.md",
-  "changelog": "https://github.com/RPG-Made-Simple/FVTT-Bifrost/blob/main/CHANGELOG.md",
-  "socket": true,
+  "license": "MODULE_LICENSE",
+  "url": "MODULE_URL",
+  "bugs": "MODULE_BUGS",
+  "manifest": "MODULE_MANIFEST",
+  "download": "MODULE_DOWNLOAD",
+  "readme": "MODULE_README",
+  "changelog": "MODULE_CHANGELOG",
   "relationships": {
     "systems": [
       {

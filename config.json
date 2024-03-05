@@ -1,0 +1,12 @@
+{
+  "details": {
+    "name": "Bifrost",
+    "displayName": "🌈 Bifrost",
+    "version": "0.0.2",
+    "repository": "https://github.com/RPG-Made-Simple/FVTT-Bifrost",
+    "internalDescription": "Library that adds an interface between systems.",
+    "externalDescription": "FoundryVTT library that adds an interface between systems.",
+    "library": true,
+    "socket": true
+  }
+}

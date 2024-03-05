@@ -12,6 +12,10 @@
 - *Workspace* - Now the module gets compiled to `/module` with minified files.
 - *Worksapce* - Added `nodejs` to the project.
 - *Workspace* - Added `gulp` to the project.
+- *Workspace* - Added `prepare` action that must be run before releasing a new version.
+- *Workspace* - Added `build` action that builds the module.
+- *Workspace* - Added `clean` action that cleans the module.
+- *Workspace* - Added `link` action that creates a symbolic link between the build folder and Foundry data folder.
 - *Type* - Added `ItemInformation` class to descibre values extracted from an item.
 - *Type* - Added `HookInformation` class to describe values extracted from a hook.
 - *Type* - Added `SystemInformation` class to describe values extracted from a system.

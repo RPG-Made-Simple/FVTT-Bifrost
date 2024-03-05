@@ -52,4 +52,4 @@ Take a look at the ~~[Documentation]()~~ WIP
 - [ ] Unit tests for internal functionalities.
 - [ ] Automated tests on a complete workspace.
 
-<h2 align="center"><a href="https://github.com/RPG-Made-Simple/FoundryVTT-Bifrost/blob/main/CHANGELOG.md">Changelog</a></h2>
+<h2 align="center"><a href="https://github.com/RPG-Made-Simple/FVTT-Bifrost/blob/main/CHANGELOG.md">Changelog</a></h2>
