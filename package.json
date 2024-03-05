@@ -1,6 +1,6 @@
 {
   "name": "fvtt-bifrost",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "FoundryVTT library that adds an interface between systems.",
   "author": "ZotyDev",
   "license": "MIT",
