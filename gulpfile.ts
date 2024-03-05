@@ -121,11 +121,11 @@ function packageJsonBundle() {
     .pipe(dest('./'));
 }
 
-async function linkModule() {
+function linkModule() {
   const config = require('./config.json');
   readline.question('Enter your FoundryVTT data folder path:', path => {
 
-    fs.symlink(__dirname + '/module', path + '/' + config.details.id, 'dir', (err) => {
+    fs.symlink(__dirname + '/module', path + '/modules/' + config.details.name.toLowerCase(), 'dir', (err) => {
       if (err) {
         console.log(err);
       } else {

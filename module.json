@@ -16,7 +16,7 @@
     {
       "lang": "en",
       "name": "English",
-      "path": "./module/lang/en.json",
+      "path": "./lang/en.json",
       "flags": {}
     }
   ],
@@ -56,6 +56,6 @@
     ]
   },
   "esmodules": [
-    "./module/module.min.js"
+    "./module.min.js"
   ]
 }
