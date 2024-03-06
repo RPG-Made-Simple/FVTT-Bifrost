@@ -9,11 +9,6 @@ import { SystemInformation, SystemRange, SystemRangeUnit } from "../system_infor
  * Bridge for Pathfinder 2e
  */
 export class Pf2eBridge extends BridgeAbstract {
-  registerReplicated(socket: any) {
-    socket.register('createItems', this._createItems);
-    socket.register('deleteItems', this._deleteItems);
-  }
-
   get attackHooks() {
     // System hooks
     const system = [
@@ -57,34 +52,6 @@ export class Pf2eBridge extends BridgeAbstract {
         melee: new SystemRange(SystemRangeUnit.Foot, 5),
       }
     });
-  }
-
-  async _createItems(targetUuid, items) {
-    // Debug
-    C.D.info('Pf2eBridge._createItems()');
-
-    await this._createItems(targetUuid, items);
-  }
-
-  async createItems(target, items) {
-    // Debug
-    C.D.info('Pf2eBridge.createItems()');
-
-    return await this.createItems(target, items);
-  }
-
-  async _deleteItems(targetUuid, itemIds) {
-    // Debug
-    C.D.info('Pf2eBridge._deleteItems()');
-
-    await this._deleteItems(targetUuid, itemIds);
-  }
-
-  async deleteItems(target, itemIds) {
-    // Debug
-    C.D.info('Pf2eBridge.deleteItems()');
-
-    return await this.deleteItems(target, itemIds);
   }
 
   getItemInformation(item) {

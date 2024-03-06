@@ -22,11 +22,6 @@ function propertyToggle(properties, property, string) {
  * Bridge for DnD5e.
  */
 export class DnD5eBridge extends BridgeAbstract {
-  registerReplicated(socket: any) {
-    socket.register('createItems', this._createItems);
-    socket.register('deleteItems', this._deleteItems);
-  }
-
   get attackHooks() {
     // System hooks
     const system = [
@@ -92,34 +87,6 @@ export class DnD5eBridge extends BridgeAbstract {
         melee: new SystemRange(SystemRangeUnit.Foot, 5),
       }
     });
-  }
-
-  async _createItems(targetUuid: string, items: Array<any>) {
-    // Debug
-    C.D.info('DnD5eBridge._createItems()');
-
-    await this._createItems(targetUuid, items);
-  }
-
-  async createItems(target: any, items: Array<any>) {
-    // Debug
-    C.D.info('DnD5eBridge.createItems()');
-
-    return await this.createItems(target, items);
-  }
-
-  async _deleteItems(targetUuid: string, itemIds: Array<string>) {
-    // Debug
-    C.D.info('DnD5eBridge._deleteItems()');
-
-    await this._deleteItems(targetUuid, itemIds);
-  }
-
-  async deleteItems(target: any, itemIds: Array<string>) {
-    // Debug
-    C.D.info('DnD5eBridge.deleteItems()');
-
-    return await this.deleteItems(target, itemIds);
   }
 
   getItemInformation(item: any) {

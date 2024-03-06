@@ -1,6 +1,6 @@
 # 🌈 Bifrost Changelog
 
-## Version 0.0.2
+## Version 0.0.3
 > This library was part of [OIF](https://foundryvtt.com/packages/object-interaction-fx), all of the changes here are relative to that module.
 - *Github* - Added `SYSTEM_SUPPORT` issue template.
 - *License* - Updated `LICENSE`.

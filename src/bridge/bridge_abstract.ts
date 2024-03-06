@@ -14,7 +14,10 @@ export abstract class BridgeAbstract {
    * Register the replicated methods
    * @param socket Instance of a socket from socketlib
    */
-  abstract registerReplicated(socket: any);
+  registerReplicated(socket: any) {
+    socket.register('createItems', this._createItems);
+    socket.register('deleteItems', this._deleteItems);
+  }
 
   /**
    * Returns all the hooks useful for attack

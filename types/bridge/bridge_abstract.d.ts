@@ -12,7 +12,7 @@ export declare abstract class BridgeAbstract {
      * Register the replicated methods
      * @param socket Instance of a socket from socketlib
      */
-    abstract registerReplicated(socket: any): any;
+    registerReplicated(socket: any): void;
     /**
      * Returns all the hooks useful for attack
      */
